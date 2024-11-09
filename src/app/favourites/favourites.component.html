@@ -1,0 +1,9 @@
+<div class="favorites-container">
+    <h2>Favorites</h2>
+    <div *ngIf="favorites.length === 0">No items in favorites.</div>
+    <div *ngFor="let item of favorites" class="favorite-item">
+      <p>{{ item.name }}</p>
+      <button  class ="remove btn"(click)="removeFromFavorites(item)">Remove</button>
+    </div>
+  </div>
+  

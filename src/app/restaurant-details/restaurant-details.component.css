@@ -1,0 +1,104 @@
+.menu_item{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_container{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+.menu_container .button_container{
+    display: flex;
+   
+    align-items: center;
+}
+.button_container button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    font-size: large;
+    border-radius: 30%;
+    border: none;
+    box-shadow: 1px 1px 5px 3px rgb(231, 231, 231);
+    
+}
+.Favourites-btn button
+{
+    background-color: rgb(211, 94, 17);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    font-size: large;
+    border-radius: 30%;
+    border: none;
+    box-shadow: 1px 1px 5px 3px rgb(231, 231, 231);
+}
+.item_des{
+    width: 60%;
+}
+.item_des i{
+    font-size: 0.8rem ;
+    margin-right: 3px;
+
+}
+.item_des .name{
+    font-size: large;
+    font-weight: bold;
+   margin-bottom: 5px;
+}
+.item_des .des{
+    color: rgb(109, 109, 109);
+    margin-top: 10px;
+}
+.res_name{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 70%;
+    margin: auto;
+}
+.res_des{
+    border: 1px solid rgb(161, 161, 161);
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    position: absolute;
+    top:20%;
+    left: 5%;
+    background-color: white;
+    
+}
+.res_des button{
+    border: none;
+    background-color: white;
+    color: orangered;
+    font-weight: bold;
+    font-size: medium;
+}
+.res_des hr{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.res_des p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.res_des .buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.res_image{
+   width: 100%;
+   border-radius: 20px;
+   height: 300px;
+}
+.res_details{
+    height: 300px;
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+.menu_item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
