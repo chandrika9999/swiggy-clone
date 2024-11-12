@@ -1,44 +1,46 @@
-<div class="res_details">
-  <img class="res_image" [src]="restaurant_details.image" alt="Restaurant Image">
-  <p class="res_name">{{ restaurant_details.name }}</p>
+<div class="restaurant-details">
+  <img class="restaurant-image" [src]="restaurant_details.image" alt="Restaurant Image">
+  <p class="restaurant-name">{{ restaurant_details.name }}</p>
 
-  <div *ngIf="restaurant_details.menu.veg.length > 0" class="menu_category">
+  <div *ngIf="restaurant_details.menu.veg.length > 0" class="menu-category">
     <h3>🟢 Veg Items</h3>
-    <div *ngFor="let item of restaurant_details.menu.veg" class="menu_container">
-      <div class="menu_item">
-        <div class="item_des">
-          <p class="name">{{ item.name }}</p>
-          <p style="color: #e1d70e;"><i class="fa-solid fa-star"></i><b>{{ item.rating }}</b></p>
-          <p class="des">{{ item.description }}</p>
-          <p style="color: black ,">Price: ₹{{ item.price }}</p>
+    <div *ngFor="let item of restaurant_details.menu.veg" class="menu-container">
+      <div class="menu-item">
+        <div class="item-description">
+          <p class="item-name">{{ item.name }}</p>
+          <p class="item-rating" style="color: #e1d70e;"><i class="fa-solid fa-star"></i><b>{{ item.rating }}</b></p>
+          <p class="item-description-text">{{ item.description }}</p>
+          <p class="item-price" style="color: black;">Price: ₹{{ item.price }}</p>
         </div>
-        <div class="button_container">
-          <button (click)="addToCart(item)">ADD</button></div>
-          <div class="Favourites-btn"> <button (click)="addToFavorites(item)">Add To Favourites</button></div>
-          
-        
+        <div class="cart-button-container">
+          <button (click)="addToCart(item)">ADD</button>
+        </div>
+        <div class="favorites-button-container">
+          <button (click)="addToFavorites(item)">Add To Favourites</button>
+        </div>
       </div>
       <hr>
     </div>
   </div>
 
-  <div *ngIf="restaurant_details.menu.nonVeg.length > 0" class="menu_category">
-    <h3 >🔴 Non-Veg Items</h3>
-    <div *ngFor="let item of restaurant_details.menu.nonVeg" class="menu_container">
-      <div class="menu_item">
-        <div class="item_des">
-          <p class="name">{{ item.name }}</p>
-          <p style="color: #e1d70e;"><i class="fa-solid fa-star"></i><b>{{ item.rating }}</b></p>
-          <p class="des">{{ item.description }}</p>
-          <p style="color: black;">Price: ₹{{ item.price }}</p>
+  <div *ngIf="restaurant_details.menu.nonVeg.length > 0" class="menu-category">
+    <h3>🔴 Non-Veg Items</h3>
+    <div *ngFor="let item of restaurant_details.menu.nonVeg" class="menu-container">
+      <div class="menu-item">
+        <div class="item-description">
+          <p class="item-name">{{ item.name }}</p>
+          <p class="item-rating" style="color: #e1d70e;"><i class="fa-solid fa-star"></i><b>{{ item.rating }}</b></p>
+          <p class="item-description-text">{{ item.description }}</p>
+          <p class="item-price" style="color: black;">Price: ₹{{ item.price }}</p>
         </div>
-        <div class="button_container">
-          <button (click)="addToCart(item)">ADD</button></div>
-          <div class="Favourites-btn"> <button (click)="addToFavorites(item)">Add To Favourites</button></div>
-       
+        <div class="cart-button-container">
+          <button (click)="addToCart(item)">ADD</button>
+        </div>
+        <div class="favorites-button-container">
+          <button (click)="addToFavorites(item)">Add To Favourites</button>
+        </div>
       </div>
       <hr>
     </div>
   </div>
-
 </div>
