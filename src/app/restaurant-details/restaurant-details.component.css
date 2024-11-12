@@ -1,18 +1,17 @@
-.menu_item{
+.menu-item {
     display: flex;
     justify-content: space-between;
 }
-.menu_container{
+.menu-container {
     width: 70%;
     margin: auto;
     padding: 10px;
 }
-.menu_container .button_container{
+.cart-button-container {
     display: flex;
-   
     align-items: center;
 }
-.button_container button{
+.cart-button-container button {
     background-color: green;
     color: white;
     font-weight: bold;
@@ -21,10 +20,8 @@
     border-radius: 30%;
     border: none;
     box-shadow: 1px 1px 5px 3px rgb(231, 231, 231);
-    
 }
-.Favourites-btn button
-{
+.favorites-button-container button {
     background-color: rgb(211, 94, 17);
     color: white;
     font-weight: bold;
@@ -34,71 +31,69 @@
     border: none;
     box-shadow: 1px 1px 5px 3px rgb(231, 231, 231);
 }
-.item_des{
+.item-description {
     width: 60%;
 }
-.item_des i{
-    font-size: 0.8rem ;
+.item-description i {
+    font-size: 0.8rem;
     margin-right: 3px;
-
 }
-.item_des .name{
+.item-name {
     font-size: large;
     font-weight: bold;
-   margin-bottom: 5px;
+    margin-bottom: 5px;
 }
-.item_des .des{
+.item-description-text {
     color: rgb(109, 109, 109);
     margin-top: 10px;
 }
-.res_name{
+.restaurant-name {
     font-size: 3rem;
     font-weight: bold;
     width: 70%;
     margin: auto;
 }
-.res_des{
+.restaurant-info {
     border: 1px solid rgb(161, 161, 161);
     padding: 20px;
     width: 40%;
     border-radius: 20px;
     position: absolute;
-    top:20%;
+    top: 20%;
     left: 5%;
     background-color: white;
-    
 }
-.res_des button{
+.restaurant-info button {
     border: none;
     background-color: white;
     color: orangered;
     font-weight: bold;
     font-size: medium;
 }
-.res_des hr{
+.restaurant-info hr {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.res_des p{
+.restaurant-info p {
     margin-top: 4px;
     margin-bottom: 4px;
 }
-.res_des .buttons{
+.restaurant-info .buttons {
     display: flex;
     justify-content: space-around;
 }
-.res_image{
-   width: 100%;
-   border-radius: 20px;
-   height: 300px;
+.restaurant-image {
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
 }
-.res_details{
+.restaurant-details {
     height: 300px;
     width: 70%;
     position: relative;
     margin: auto;
 }
-.menu_item{
+.menu-item {
     margin-top: 20px;
     margin-bottom: 20px;
 }
