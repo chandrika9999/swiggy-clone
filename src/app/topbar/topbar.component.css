@@ -11,4 +11,11 @@
   .topbar-btn:hover {
     background-color: black;
   }
-  
+  .topbar
+  {
+    position: sticky; top: 0; width: 100%; background-color:orangered; color: white; z-index: 1000;
+  }
+  .list
+  {
+    display: flex; justify-content: flex-end; list-style: none; padding: 10px;
+  }

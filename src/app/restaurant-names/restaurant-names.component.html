@@ -1,0 +1,46 @@
+<div class="restaurant-details">
+  <img class="restaurant-image" [src]="restaurant_details.image" alt="Restaurant Image">
+  <p class="restaurant-name">{{ restaurant_details.name }}</p>
+
+  <div *ngIf="restaurant_details.menu.veg.length > 0" class="menu-category">
+    <h3>🟢 Veg Items</h3>
+    <div *ngFor="let item of restaurant_details.menu.veg" class="menu-container">
+      <div class="menu-item">
+        <div class="item-description">
+          <p class="item-name">{{ item.name }}</p>
+          <p class="item-rating" style="color: #e1d70e;"><i class="fa-solid fa-star"></i><b>{{ item.rating }}</b></p>
+          <p class="item-description-text">{{ item.description }}</p>
+          <p class="item-price" style="color: black;">Price: ₹{{ item.price }}</p>
+        </div>
+        <div class="cart-button-container">
+          <button (click)="addToCart(item)">ADD</button>
+        </div>
+        <div class="favorites-button-container">
+          <button (click)="addToFavorites(item)">Add To Favourites</button>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div *ngIf="restaurant_details.menu.nonVeg.length > 0" class="menu-category">
+    <h3>🔴 Non-Veg Items</h3>
+    <div *ngFor="let item of restaurant_details.menu.nonVeg" class="menu-container">
+      <div class="menu-item">
+        <div class="item-description">
+          <p class="item-name">{{ item.name }}</p>
+          <p class="item-rating" style="color: #e1d70e;"><i class="fa-solid fa-star"></i><b>{{ item.rating }}</b></p>
+          <p class="item-description-text">{{ item.description }}</p>
+          <p class="item-price" style="color: black;">Price: ₹{{ item.price }}</p>
+        </div>
+        <div class="cart-button-container">
+          <button (click)="addToCart(item)">ADD</button>
+        </div>
+        <div class="favorites-button-container">
+          <button (click)="addToFavorites(item)">Add To Favourites</button>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

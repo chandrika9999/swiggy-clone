@@ -1,0 +1,27 @@
+<div class="home" #bg>
+    <div class="sign">
+        <div class="top">
+            <ul>
+                <li *ngIf="!isLoggedIn">
+                    <button (click)="showSignIn()" class="here auth-button">Sign in</button>
+                </li>
+                <li *ngIf="isLoggedIn">
+                    <button (click)="signOut()" class="here auth-button">Sign Out</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="restaurants-head">
+            <h2 class="here headline-text">Craving something delicious? EXPLORE THE NEW CHRISTMAS MENU</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="cards-wrapper" #cardsWrapper>
+                <app-restaurant-card *ngFor="let restaurant of restaurants" [restaurant]="restaurant"></app-restaurant-card>
+            </div>
+        </div>
+    </div>
+
+    <app-signin #signin></app-signin>
+</div>

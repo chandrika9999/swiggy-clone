@@ -1,0 +1,144 @@
+
+.visible {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  overflow-y: auto;
+}
+
+.slide-in {
+  transform: translateX(0);
+}
+
+.slide-out {
+  transform: translateX(100%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 1rem;
+  color: #666;
+}
+
+.error {
+  background-color: #d90000;
+  color: #ffffff;
+  padding: 10px 15px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.field {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.submit {
+  width: 100%;
+  background-color: #333;
+  padding: 12px;
+  color: #ffffff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #444;
+}
+
+.toggle-container {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  color: #0073e6;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.toggle:hover {
+  text-decoration: underline;
+}
+
+.validation {
+  color: #d90000;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.head-content {
+  flex: 1;
+}
+
+.head img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+}

@@ -127,8 +127,8 @@ export class RestaurantService {
       image: 'https://b.zmtcdn.com/data/pictures/7/20968477/8e667398406985e109b8cc217d027b91.jpg?fit=around|960:500&crop=960:500;*,*',
       menu: {
         veg: [
-          // Example if any vegetarian items are added to this restaurant
-          // { item_id: 1, name: 'Veg Grilled Sandwich', rating: '4.2', description: 'Grilled veggies in a sandwich.', price: 150 }
+          
+           { item_id: 1, name: 'Veg Grilled Sandwich', rating: '4.2', description: 'Grilled veggies in a sandwich.', price: 150 }
         ],
         nonVeg: [
           { item_id: 1, name: 'BBQ Ribs', rating: '4.6', description: 'Juicy grilled ribs served with smoky BBQ sauce.', price: 450 }
